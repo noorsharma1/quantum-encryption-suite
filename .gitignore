@@ -1,0 +1,17 @@
+# Python venv & bytecode
+.venv/
+__pycache__/
+*.pyc
+
+# Output files
+*.pdf
+*.json
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS stuff
+.DS_Store
+Thumbs.db

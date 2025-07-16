@@ -1,0 +1,14 @@
+Create CLI interface
+Add stealth mode support
+Implement rule loader for YAML files
+Add rule: Detect SHA-1 usage
+Add rule: Detect MD5 usage
+Add rule: Detect AES ECB mode
+Build JSON output module
+Create Kyber-based PQC encryptor
+Create Dilithium signing module
+Implement FastAPI backend (Phase 2)
+Design REST API schema for scan results
+Add GitHub Actions CI pipeline
+Add sample test cases for scanner
+Write README and architecture docs
