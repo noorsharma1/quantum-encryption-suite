@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -flto -shared  -o oqs_bindings.cpython-312-x86_64-linux-gnu.so CMakeFiles/oqs_bindings.dir/bindings.cpp.o CMakeFiles/oqs_bindings.dir/oqs_engine.cpp.o  -loqs /usr/lib/x86_64-linux-gnu/libcrypto.so 

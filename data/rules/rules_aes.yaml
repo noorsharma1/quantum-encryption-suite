@@ -1,0 +1,5 @@
+- id: "A001"
+  name: "Weak AES Key Size"
+  pattern: "AES\\s*\\(\\s*keySize\\s*=\\s*128\\s*\\)"
+  severity: "medium"
+  description: "Detects AES key size of 128 bits (considered less secure for sensitive data)"

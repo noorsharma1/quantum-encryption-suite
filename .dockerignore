@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+build/
+tests/
+output/
+*.log
+*.zip
+*.pdf
+*.xlsx
+scan_report.*

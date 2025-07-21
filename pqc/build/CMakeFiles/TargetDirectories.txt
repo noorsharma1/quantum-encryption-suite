@@ -1,0 +1,3 @@
+/home/hp/quantum_encryption_scanner/pqc/build/CMakeFiles/oqs_bindings.dir
+/home/hp/quantum_encryption_scanner/pqc/build/CMakeFiles/edit_cache.dir
+/home/hp/quantum_encryption_scanner/pqc/build/CMakeFiles/rebuild_cache.dir

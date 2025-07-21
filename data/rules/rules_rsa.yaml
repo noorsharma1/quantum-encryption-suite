@@ -1,0 +1,5 @@
+- id: R001
+  name: Weak RSA Key Detected
+  pattern: "RSA\\s*\\(\\s*keySize\\s*=\\s*512\\s*\\)"
+  severity: high
+  description: Detects usage of 512-bit RSA keys (insecure)

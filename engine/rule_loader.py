@@ -1,20 +1,27 @@
 import os
 import yaml
 
-def load_rules(rule_dir=None):
-    rules = []
-    base_dir = rule_dir or os.path.join(os.path.dirname(__file__), '..', 'data', 'rules')
+RULE_PATHS = {
+    'rsa': 'data/rules/rules_rsa.yaml',
+    'aes': 'data/rules/rules_aes.yaml',
+    'ecc': 'data/rules/rules_ecc.yaml',
+}
 
-    for filename in os.listdir(base_dir):
-        if filename.endswith('.yaml') or filename.endswith('.yml'):
-            full_path = os.path.join(base_dir, filename)
-            try:
-                with open(full_path, 'r') as f:
-                    rule = yaml.safe_load(f)
-                    rules.append(rule)
-            except yaml.YAMLError as e:
-                print(f"[!] Error reading {filename}: {e}")
-            except Exception as e:
-                print(f"[!] General error with {filename}: {e}")
-    
+def load_rules(rule_set='all'):
+    rules = []
+
+    if rule_set == 'all':
+        selected_paths = RULE_PATHS.values()
+    else:
+        selected_paths = [RULE_PATHS.get(rule_set)]
+
+    for path in selected_paths:
+        if path and os.path.exists(path):
+            with open(path, 'r') as f:
+                loaded = yaml.safe_load(f)
+                if loaded:
+                    rules.extend(loaded)
+        else:
+            print(f"[!] Rule file not found: {path}")
+
     return rules

@@ -1,0 +1,5 @@
+- id: "E001"
+  name: "Deprecated ECC Curve"
+  pattern: "secp192r1"
+  severity: "high"
+  description: "Detects usage of deprecated or weak ECC curve: secp192r1"
