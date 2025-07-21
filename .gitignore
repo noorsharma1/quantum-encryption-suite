@@ -1,17 +1,28 @@
-# Python venv & bytecode
-.venv/
+# Python
+venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Output files
-*.pdf
-*.json
-*.log
+# Node.js / React
+node_modules/
+dist/
+build/
+.npm/
+.yarn/
 
-# IDE settings
-.vscode/
-.idea/
-
-# OS stuff
+# OS files
 .DS_Store
 Thumbs.db
+
+# Logs / temp
+*.log
+.env
+.env.*
+*.bak
+*.swp
+*.zip
+
+# CMake build
+pqc/build/
